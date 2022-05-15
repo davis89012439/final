@@ -18,6 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LoginPage"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".tvScreen"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
