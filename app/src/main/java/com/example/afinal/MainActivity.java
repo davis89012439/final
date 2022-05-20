@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, com.example.afinal.LoginPage.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -51,9 +52,10 @@ public class MainActivity extends AppCompatActivity {
 
                             String UserId = task.getResult().getUser().getUid();
                             database.getReference().child("User").child(UserId).setValue(user);
-                            Intent intent = new Intent(MainActivity.this, com.example.afinal.tvScreen.class);
+                            Intent intent = new Intent(MainActivity.this, MenuPage.class);
                             startActivity(intent);
                             Toast.makeText(MainActivity.this, "User register Successfully", Toast.LENGTH_SHORT).show();
+                            finish();
                         }
                         Toast.makeText(MainActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
@@ -61,5 +63,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        if (auth.getCurrentUser() != null) {
+            Intent intent = new Intent(MainActivity.this, MenuPage.class);
+            startActivity(intent);
+            finish();
+        }
+
     }
 }

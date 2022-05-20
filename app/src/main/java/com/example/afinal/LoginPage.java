@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.afinal.Models.User;
 import com.example.afinal.databinding.ActivityLoginPageBinding;
-import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
@@ -55,8 +54,9 @@ public class LoginPage extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         progressDialog.dismiss();
                         if (task.isSuccessful()) {
-                            Intent intent = new Intent(LoginPage.this, tvScreen.class);
+                            Intent intent = new Intent(LoginPage.this, MenuPage.class);
                             startActivity(intent);
+                            finish();
                         } else {
                             Toast.makeText(LoginPage.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
@@ -69,8 +69,9 @@ public class LoginPage extends AppCompatActivity {
 
 
         if (auth.getCurrentUser() != null) {
-            Intent intent = new Intent(LoginPage.this, tvScreen.class);
+            Intent intent = new Intent(LoginPage.this, MenuPage.class);
             startActivity(intent);
+            finish();
         }
 
         binding.btnLoginClickForSignUp.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +79,7 @@ public class LoginPage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(LoginPage.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
@@ -90,34 +92,34 @@ public class LoginPage extends AppCompatActivity {
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
     }*/
 
-    private void firebaseAuthWithGoogle(String idToken) {
-        AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
-        auth.signInWithCredential(credential)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            Log.d("TAG", "signInWithCredential:success");
-                            FirebaseUser user = auth.getCurrentUser();
-                            User user1 = new User();
-                            user1.setUserId(user.getUid());
-                            user1.setUserName(user.getDisplayName());
-                            user1.setProfilePicture(user.getPhotoUrl().toString());
-                            database.getReference().child("Users").child(user.getUid()).setValue(user1);
-
-                            Intent intent = new Intent(LoginPage.this, tvScreen.class);
-                            startActivity(intent);
-                            Toast.makeText(LoginPage.this, "Sign in With Google", Toast.LENGTH_SHORT).show();
-
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w("TAG", "signInWithCredential:failure", task.getException());
-                            Snackbar.make(binding.getRoot(), "Authentication Failed.", Snackbar.LENGTH_SHORT).show();
-                        }
-
-                    }
-                });
-    }
+//    private void firebaseAuthWithGoogle(String idToken) {
+//        AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
+//        auth.signInWithCredential(credential)
+//                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<AuthResult> task) {
+//                        if (task.isSuccessful()) {
+//                            // Sign in success, update UI with the signed-in user's information
+//                            Log.d("TAG", "signInWithCredential:success");
+//                            FirebaseUser user = auth.getCurrentUser();
+//                            User user1 = new User();
+//                            user1.setUserId(user.getUid());
+//                            user1.setUserName(user.getDisplayName());
+//                            user1.setProfilePicture(user.getPhotoUrl().toString());
+//                            database.getReference().child("Users").child(user.getUid()).setValue(user1);
+//
+//                            Intent intent = new Intent(LoginPage.this, MenuPage.class);
+//                            startActivity(intent);
+//                            Toast.makeText(LoginPage.this, "Sign in With Google", Toast.LENGTH_SHORT).show();
+//
+//                        } else {
+//                            // If sign in fails, display a message to the user.
+//                            Log.w("TAG", "signInWithCredential:failure", task.getException());
+//                            Snackbar.make(binding.getRoot(), "Authentication Failed.", Snackbar.LENGTH_SHORT).show();
+//                        }
+//
+//                    }
+//                });
+//    }
 }
 
