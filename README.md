@@ -5,7 +5,7 @@ member: 凌敬棋, 關智聰
 5/16           | build register,login 
 -------------  | -------------
 凌敬棋         | make register and login
-關智聰         | make restaurant list and search  
+關智聰         | make restaurant list 
 
 
 member: 凌敬棋, 關智聰
