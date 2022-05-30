@@ -15,10 +15,8 @@ member: 凌敬棋, 關智聰
 凌敬棋         | make order list
 關智聰         | make restaurant search                       
 
-
 member: 凌敬棋, 關智聰
 
-5/30           | 購物車實現 and 外送著介面(not complete)
+5/29           | rider app
 -------------  | -------------
-凌敬棋         | 購物車實現
-關智聰         | 外送著介面    
+關智聰         | reservation ui and side menu                      
