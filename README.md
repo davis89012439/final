@@ -17,6 +17,6 @@ member: 凌敬棋, 關智聰
 
 member: 凌敬棋, 關智聰
 
-5/29           | rider app
+5/30           | rider app
 -------------  | -------------
 關智聰         | reservation ui and side menu                      
