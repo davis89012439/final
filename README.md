@@ -32,13 +32,13 @@ member: 凌敬棋, 關智聰
     <td>Github帳號</td>
 </tr>
  <tr>
-  <td>賴建宇</td>
+  <td>關智聰</td>
   <td>D0792369</td>
   <td>a123456</td>
  <tr>
   <td>凌敬棋</td>
   <td>D0743630</td>
-  <td>a123456</td>
+  <td>davis89012439@gmail.com</td>
   </tr>
   </table>
 
@@ -54,12 +54,12 @@ member: 凌敬棋, 關智聰
  <tr>
  <td>凌敬棋</td>
  <td>D0792369</td>
- <td>a123456</td>
- <td>#2,#4</td>
+ <td>davis89012439@gmail.com</td>
+ <td>make register and login</td>
  <tr>
   <td>關智聰</td>
   <td>D0743630</td>
   <td>a123456</td>   
- <td>#2,#4</td>
+ <td>make restaurant list </td>
 </tr>
 </table>
