@@ -59,6 +59,7 @@ member: 凌敬棋, 關智聰
  <tr>
   <td>關智聰</td>
   <td>D0743630</td>
+  <td>a123456</td>   
  <td>#2,#4</td>
 </tr>
 </table>
