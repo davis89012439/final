@@ -24,7 +24,7 @@ member: 凌敬棋, 關智聰
 
 
 
-# tiger-meal
+# final
 <table>
 <tr>
     <td>組員姓名</td>
@@ -38,7 +38,7 @@ member: 凌敬棋, 關智聰
   </tr>
   </table>
 
-# 2022-06-02
+# 2022-05-16
 
 <table>
 <tr>
@@ -48,7 +48,11 @@ member: 凌敬棋, 關智聰
     <td>Issues</td>
 </tr>
  <tr>
- <td>賴建宇</td>
+ <td>凌敬棋</td>
+ <td>D0792369</td>
+ <td>a123456</td>
+ <td>#2,#4</td>
+ <td>關智聰</td>
  <td>D0792369</td>
  <td>a123456</td>
  <td>#2,#4</td>
