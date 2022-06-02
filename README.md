@@ -35,6 +35,10 @@ member: 凌敬棋, 關智聰
   <td>賴建宇</td>
   <td>D0792369</td>
   <td>a123456</td>
+ <tr>
+  <td>凌敬棋</td>
+  <td>D0743630</td>
+  <td>a123456</td>
   </tr>
   </table>
 
