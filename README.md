@@ -76,12 +76,12 @@
  <td>凌敬棋</td>
  <td>D0792369</td>
  <td>davis89012439@gmail.com</td>
- <td>make order list</td>
+ <td>make order list and cart</td>
  <tr>
   <td>關智聰</td>
   <td>D0743630</td>
   <td>a123456</td>   
- <td>reservation ui and side menu /td>
+ <td>reservation ui and side menu <td>
 </tr>
 </table>
 
