@@ -9,7 +9,7 @@
 </tr>
  <tr>
   <td>關智聰</td>
-  <td>D0792369</td>
+  <td>D0721289</td>
   <td>kwanchichunt@gmail.com</td>
  <tr>
   <td>凌敬棋</td>
@@ -34,7 +34,7 @@
  <td>make register and login</td>
  <tr>
   <td>關智聰</td>
-  <td>D0743630</td>
+  <td>D0721289</td>
   <td>kwanchichunt@gmail.com</td>   
  <td>make restaurant list </td>
 </tr>
@@ -56,7 +56,7 @@
  <td>make order list</td>
  <tr>
   <td>關智聰</td>
-  <td>D0743630</td>
+  <td>D0721289</td>
   <td>kwanchichunt@gmail.com</td>   
  <td>make restaurant search</td>
 </tr>
@@ -79,7 +79,7 @@
  <td>make order list and cart</td>
  <tr>
   <td>關智聰</td>
-  <td>D0743630</td>
+  <td>D0721289</td>
   <td>kwanchichunt@gmail.com</td>   
  <td>reservation ui and side menu <td>
 </tr>
@@ -101,9 +101,9 @@
  <td>order finalize</td>
  <tr>
   <td>關智聰</td>
-  <td>D0743630</td>
+  <td>D0721289</td>
   <td>kwanchichunt@gmail.com</td>   
- <td>googlemap reservation ui and side menu finalize <td>
+ <td>googlemap and navigation <td>
 </tr>
 </table>
 
