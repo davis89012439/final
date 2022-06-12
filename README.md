@@ -103,7 +103,7 @@
   <td>關智聰</td>
   <td>D0743630</td>
   <td>kwanchichunt@gmail.com</td>   
- <td>reservation ui and side menu finalize <td>
+ <td>googlemap reservation ui and side menu finalize <td>
 </tr>
 </table>
 
